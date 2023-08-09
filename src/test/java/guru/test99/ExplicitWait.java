@@ -17,7 +17,7 @@ public class ExplicitWait {
     @Test
     public void guru99tutorials() throws InterruptedException
     {
-        System.setProperty ("webdriver.chrome.driver",".\\chromedriver.exe" );
+        System.setProperty ("webdriver.chrome.driver","src/test/resources/chromedriver.exe" );
         driver = new ChromeDriver();
         WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME));
         String eTitle = "Demo Guru99 Page";

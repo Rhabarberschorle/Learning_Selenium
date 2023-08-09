@@ -10,7 +10,7 @@ public class ImplicitWait {
 
     @Test
     public void guru99tutorials() throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         String eTitle = "Demo Guru99 Page";
